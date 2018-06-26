@@ -1,0 +1,57 @@
+/* rules for main text-header */
+@keyframes inLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  /* A litle bit trick */
+  80% {
+    transform: translateX(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* rules for sub text-header */
+@keyframes inRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  /* A litle bit trick */
+  80% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+/* rules for sub button-header */
+@keyframes moveBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  /* A litle bit trick */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// rules for green arrow
+@keyframes arrow {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}

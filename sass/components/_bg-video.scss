@@ -1,0 +1,19 @@
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+
+    // trick to cover the entire parent element
+    // we can use the property TODO: fill and it is good as well
+    object-fit: cover;
+  }
+}
