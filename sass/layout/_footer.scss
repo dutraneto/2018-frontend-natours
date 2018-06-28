@@ -3,6 +3,10 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
 
   &__logo-box {
     text-align: center;
@@ -20,6 +24,10 @@
     // to only occupy the width that it needs
     display: inline-block;
 
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
 
   }
 
@@ -45,6 +53,11 @@
 
     width: 80%;
     float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+    }
   }
 
   &__link {

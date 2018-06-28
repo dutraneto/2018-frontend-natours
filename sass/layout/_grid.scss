@@ -5,6 +5,15 @@
   // it selects every element to give that property except the last child
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 50%;
+    padding: 0 3rem;
   }
 
   // mixin clearfix
@@ -16,6 +25,18 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    // breakpoints
+    /* all of columns will be transformed in rows to want to make really sure
+    that the those width are overwriten */
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
