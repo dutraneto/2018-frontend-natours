@@ -51,8 +51,9 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
   // the new trick that fits the gradient colors inside of the text
-  background-clip: text;
+  -moz--background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s;
