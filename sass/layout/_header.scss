@@ -3,7 +3,7 @@
   background-image: linear-gradient(to right bottom,
                                    rgba($color-primary-light, 0.6),
                                    rgba($color-primary-dark, 0.6)),
-                                   url(../img/hero.jpg);
+                                   url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   /* magic */
@@ -11,6 +11,15 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  // retina display
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+         (min-width: 125em) /* OR */ {
+    background-image: linear-gradient(to right bottom,
+                                   rgba($color-primary-light, 0.6),
+                                   rgba($color-primary-dark, 0.6)),
+                                   url(../img/hero.jpg);
+  }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
