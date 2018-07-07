@@ -12,11 +12,11 @@ html {
   font-size: 62.5%;        // 1 rem = 10px
 
 
-  // will no longer use this
+  
 
-  // @include respond(phone) {
-  //   font-size: 50%;        
-  // }
+  @include respond(phone) {
+    font-size: 50%;        
+  }
 
   @include respond(tab-land) { // width < 1200?
     font-size: 56.25%;        // 1 rem = 9px, 9/16 = 56.25%
@@ -45,4 +45,9 @@ ul,
 ol,
 li {
   list-style: none;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
