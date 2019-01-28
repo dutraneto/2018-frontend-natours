@@ -1,6 +1,8 @@
 # Natours
 
-## Natours is a front-end project based on PSD design
+## Natours is a front-end project based on a PSD/SKETCH designed by Jonas Schmedtmann - Designer
+
+### This project is part of an advanced CSS course
 
 ### Front-end
 
