@@ -39,9 +39,3 @@
 ![](front-end/responsive.png)
 
 ### TODO
-
-🔘 Create a PT-BR to EN language switching
-
-🔘 Create a nigth mode vision switching
-
-🔘 Create a integration to Travis
