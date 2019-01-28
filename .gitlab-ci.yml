@@ -2,8 +2,7 @@ pages:
   stage: deploy
   script:
     - mkdir .public
-    - cp -r css/style.css .public
-    - cp -r index.html .public
+    - cp -r dist/* .public
     - mv .public public
   artifacts:
     paths:
